@@ -1,1 +1,52 @@
-<html><h1>Hello</h1></html>
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <title>Christofer API – Dokumentation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 40px auto;
+      line-height: 1.6;
+    }
+    code {
+      background: #f4f4f4;
+      padding: 4px 6px;
+      border-radius: 4px;
+    }
+    pre {
+      background: #f4f4f4;
+      padding: 12px;
+      border-radius: 6px;
+      overflow-x: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Christofer API</h1>
+  <p>Välkommen! Detta API ger information om mig i JSON-format.</p>
+
+  <h2>Endpoint</h2>
+  <p>Hämta min information via:</p>
+  <pre><code>GET https://christofervilander.se/api/v1</code></pre>
+
+  <h2>📄 Exempel på svar</h2>
+  <pre><code>{
+  "name": "Christofer",
+  "location": "Sverige",
+}</code></pre>
+
+  <h2>💻 Exempel: hämta data med JavaScript</h2>
+  <pre><code>fetch("https://christofervilander.se/api/v1")
+  .then(res => res.json())
+  .then(data => console.log(data));</code></pre>
+
+  <h2>🖥️ Exempel: hämta data med cURL</h2>
+  <pre><code>curl https://christofervilander.se/api/v1</code></pre>
+
+  <p>Bygg gärna vidare på API:et och lägg till fler endpoints!</p>
+
+</body>
+</html>
