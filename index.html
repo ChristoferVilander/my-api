@@ -46,29 +46,29 @@
 
   <h1>Christofer API</h1>
   <p>
-    Det här API:et ger enkel JSON‑baserad information om mig.  
-    Använd det fritt i egna projekt, demos eller experiment.
+    Detta API tillhandahåller enkel JSON‑baserad information om mig.  
+    Det är fritt att använda i egna projekt, demos eller experiment.
   </p>
 
-  <h2>📌 Huvud‑endpoint</h2>
+  <h2>Huvud‑endpoint</h2>
   <pre><code>GET https://christofervilander.se/api/v1</code></pre>
 
-  <h2>👤 Hämta min information</h2>
+  <h2>Hämta min information</h2>
   <pre><code>GET https://christofervilander.se/api/v1/me</code></pre>
 
-  <h2>📄 Exempel på svar</h2>
+  <h2>Exempel på svar</h2>
   <pre><code>{
   "message": "Välkommen till API v1",
   "endpoints": ["/api/v1/me"]
 }</code></pre>
 
-  <h2>💻 Exempel i JavaScript</h2>
+  <h2>Exempel i JavaScript</h2>
   <pre><code>fetch("https://christofervilander.se/api/v1/me")
   .then(res => res.json())
   .then(data => console.log(data));</code></pre>
 
   <p>
-    API:et är under utveckling och kommer utökas med fler endpoints.
+    API:et är under utveckling och kommer att utökas med fler endpoints.
   </p>
 
 </body>
