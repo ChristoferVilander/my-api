@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="sv">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <title>Christofer API</title>
@@ -46,29 +46,29 @@
 
   <h1>Christofer API</h1>
   <p>
-    Detta API tillhandahåller enkel JSON‑baserad information om mig.  
-    Det är fritt att använda i egna projekt, demos eller experiment.
+    This API provides simple JSON-based information about me.  
+    You are free to use it in your own projects, demos, or experiments.
   </p>
 
-  <h2>Huvud‑endpoint</h2>
+  <h2>Main endpoint</h2>
   <pre><code>GET https://christofervilander.se/api/v1</code></pre>
 
-  <h2>Hämta min information</h2>
+  <h2>Get my information</h2>
   <pre><code>GET https://christofervilander.se/api/v1/me</code></pre>
 
-  <h2>Exempel på svar</h2>
+  <h2>Example response</h2>
   <pre><code>{
-  "message": "Välkommen till API v1",
+  "message": "Welcome to API v1",
   "endpoints": ["/api/v1/me"]
 }</code></pre>
 
-  <h2>Exempel i JavaScript</h2>
+  <h2>JavaScript example</h2>
   <pre><code>fetch("https://christofervilander.se/api/v1/me")
   .then(res => res.json())
   .then(data => console.log(data));</code></pre>
 
   <p>
-    API:et är under utveckling och kommer att utökas med fler endpoints.
+    The API is under development and will be expanded with additional endpoints.
   </p>
 
 </body>
