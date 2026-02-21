@@ -2,51 +2,74 @@
 <html lang="sv">
 <head>
   <meta charset="UTF-8" />
-  <title>Christofer API – Dokumentation</title>
+  <title>Christofer API</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      max-width: 800px;
-      margin: 40px auto;
-      line-height: 1.6;
+      background: #0d0d0d;
+      color: #e6e6e6;
+      font-family: system-ui, sans-serif;
+      max-width: 700px;
+      margin: 60px auto;
+      padding: 0 20px;
+      line-height: 1.7;
     }
-    code {
-      background: #f4f4f4;
-      padding: 4px 6px;
-      border-radius: 4px;
+    h1 {
+      font-size: 2.4rem;
+      margin-bottom: 0.3rem;
+      color: #ffffff;
+    }
+    h2 {
+      margin-top: 2rem;
+      color: #ffffff;
+    }
+    code, pre {
+      background: #1a1a1a;
+      color: #d4d4d4;
+      padding: 8px 12px;
+      border-radius: 6px;
+      font-family: "JetBrains Mono", monospace;
     }
     pre {
-      background: #f4f4f4;
-      padding: 12px;
-      border-radius: 6px;
+      padding: 14px;
       overflow-x: auto;
+    }
+    a {
+      color: #4da6ff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
 
   <h1>Christofer API</h1>
-  <p>Välkommen! Detta API ger information om mig i JSON-format.</p>
+  <p>
+    Det här API:et ger enkel JSON‑baserad information om mig.  
+    Använd det fritt i egna projekt, demos eller experiment.
+  </p>
 
-  <h2>Endpoint</h2>
-  <p>Hämta min information via:</p>
+  <h2>📌 Huvud‑endpoint</h2>
   <pre><code>GET https://christofervilander.se/api/v1</code></pre>
+
+  <h2>👤 Hämta min information</h2>
+  <pre><code>GET https://christofervilander.se/api/v1/me</code></pre>
 
   <h2>📄 Exempel på svar</h2>
   <pre><code>{
-  "name": "Christofer",
-  "location": "Sverige",
+  "message": "Välkommen till API v1",
+  "endpoints": ["/api/v1/me"]
 }</code></pre>
 
-  <h2>💻 Exempel: hämta data med JavaScript</h2>
-  <pre><code>fetch("https://christofervilander.se/api/v1")
+  <h2>💻 Exempel i JavaScript</h2>
+  <pre><code>fetch("https://christofervilander.se/api/v1/me")
   .then(res => res.json())
   .then(data => console.log(data));</code></pre>
 
-  <h2>🖥️ Exempel: hämta data med cURL</h2>
-  <pre><code>curl https://christofervilander.se/api/v1</code></pre>
-
-  <p>Bygg gärna vidare på API:et och lägg till fler endpoints!</p>
+  <p>
+    API:et är under utveckling och kommer utökas med fler endpoints.
+  </p>
 
 </body>
 </html>
