@@ -2,6 +2,23 @@
   "name": "Christofer Vilander",
   "title": "IT Product Manager",
   "location": "Borlänge",
-  "about": "I have 15+ years of experience in the IT and E-Commerce industry, spanning both strategic and operational roles. Currently, I am a Product Area Manager at Lyko, where I lead teams developing our E-Commerce, App, POS, and AI initiatives. I hold a Bachelor’s degree in Media & Communication Studies, complemented by courses in Web Development and C#. I enjoy working at the intersection of business and IT, and my goal is to continuously learn and develop in both areas."
+  "about": "I have 15+ years of experience in the IT and E-Commerce industry, spanning both strategic and operational roles. Currently, I am a Product Area Manager at Lyko, where I lead teams developing our E-Commerce, App, POS, and AI initiatives. I hold a Bachelor’s degree in Media & Communication Studies, complemented by courses in Web Development and C#. I enjoy working at the intersection of business and IT, and my goal is to continuously learn and develop in both areas.",
+  "experience_years": 15,
+  "current_role": "Product Area Manager at Lyko",
+  "focus_areas": [
+    "E-Commerce",
+    "Mobile App",
+  ],
+  "skills": [
+    "Product management",
+    "Leadership",
+    "Stakeholder management",
+    "E-commerce strategy"
+  ],
+  "links": {
+    "website": "https://christofervilander.se",
+    "github": "https://github.com/ChristoferVilander",
+    "linkedin": "https://www.linkedin.com/in/christofervilander"
+  }
 }
 
