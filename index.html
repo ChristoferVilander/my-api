@@ -70,22 +70,27 @@
 </head>
 <body>
 
-  <h1>Christofers API</h1>
+  <h1>Christofer API</h1>
   <p>
-    This API provides simple JSON-based information about me. 
-    It is under development and will be expanded with additional endpoints. 
+    A small personal API that exposes structured information about me, my skills and my work.
   </p>
 
-  <h2>Main endpoint</h2>
-  <pre><code>GET https://christofervilander.se/api/v1</code></pre>
+  <h2>Base URL</h2>
+  <pre><code>https://christofervilander.se/api/v1</code></pre>
 
-  <h2>Get my information</h2>
-  <pre><code>GET https://christofervilander.se/api/v1/me</code></pre>
+  <h2>Available endpoints</h2>
+  <ul>
+    <li><code>GET /api/v1</code> – API overview and available endpoints.</li>
+    <li><code>GET /api/v1/me</code> – Profile information (name, title, location, bio, focus areas, links).</li>
+  </ul>
 
-  <h2>Example response</h2>
+  <h2>Example response from <code>/api/v1/me</code></h2>
   <pre><code>{
-  "message": "Welcome to API v1",
-  "endpoints": ["/api/v1/me"]
+  "name": "Christofer Vilander",
+  "title": "IT Product Manager",
+  "location": "Borlänge",
+  "experience_years": 15,
+  "current_role": "Product Area Manager at Lyko"
 }</code></pre>
 
   <h2>JavaScript example</h2>
