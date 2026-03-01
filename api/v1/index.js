@@ -1,4 +1,5 @@
 export default function handler(req, res) {
+  res.setHeader("X-Content-Type-Options", "nosniff");
   const payload = {
     success: true,
     data: {

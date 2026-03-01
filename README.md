@@ -64,7 +64,7 @@ curl https://christofervilander.se/api/v1/me
 
 ## Deploy
 
-This project is set up for [Vercel](https://vercel.com). Connect your repo and deploy; the serverless functions in `api/` are used automatically.
+This project is set up for [Vercel](https://vercel.com). 
 
 ## License
 

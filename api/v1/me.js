@@ -3,6 +3,7 @@ import path from "path";
 
 export default function handler(req, res) {
   if (req.method !== "GET") {
+    res.setHeader("X-Content-Type-Options", "nosniff");
     return res.status(405).json({
       success: false,
       error: { code: "METHOD_NOT_ALLOWED", message: "Method not allowed" },
@@ -22,9 +23,11 @@ export default function handler(req, res) {
         generated_at: new Date().toISOString()
       }
     };
+    res.setHeader("X-Content-Type-Options", "nosniff");
     res.setHeader("Cache-Control", "public, max-age=300");
     return res.status(200).json(payload);
   } catch (err) {
+    res.setHeader("X-Content-Type-Options", "nosniff");
     return res.status(500).json({
       success: false,
       error: { code: "INTERNAL_ERROR", message: "Failed to load profile" },
