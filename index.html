@@ -86,11 +86,18 @@
 
   <h2>Example response from <code>/api/v1/me</code></h2>
   <pre><code>{
-  "name": "Christofer Vilander",
-  "title": "IT Product Manager",
-  "location": "Borlänge",
-  "experience_years": 15,
-  "current_role": "Product Area Manager at Lyko"
+  "success": true,
+  "data": {
+    "name": "Christofer Vilander",
+    "title": "IT Product Manager",
+    "location": "Borlänge",
+    "experience_years": 15,
+    "current_role": "Product Area Manager at Lyko"
+  },
+  "meta": {
+    "version": "1",
+    "generated_at": "2026-02-24T12:00:00.000Z"
+  }
 }</code></pre>
 
   <p>
